@@ -43,7 +43,7 @@ void descubrirSecuencia(unordered_set<string>& dict, string entrada, int i,
                 res += particion[i];
             }
             else {
-              res += particion[i] + " ";
+                res += particion[i] + " ";
             }
         }
         resultado.push_back(res);
