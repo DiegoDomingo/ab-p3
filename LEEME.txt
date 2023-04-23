@@ -1,0 +1,32 @@
+Alonso Gutiérrez, Simón     821038@unizar.es    a821038
+Domingo Ralla, Diego        818637@unizar.es    a818637
+
+Se ha elaborado un programa que, dada una cadena de entrada y un diccionario de
+palabras, encuentra si la cadena de entrada se puede dividir en una o varias
+secuencias de palabras del diccionario, separadas por espacios en blanco. Así, 
+el programa escribe si es posible hacer la partición o no, y en caso de que sea
+posible, escribir cuáles son las particiones.
+
+Como cadena de entrada, el programa selecciona de manera aleatoria numPal / 10
+palabras del diccionario, donde numPal es el total de palabras del diccionario.
+
+El programa separarPalabras.cc recibe tres parámetros como entrada:
+•   diccionario.txt: fichero donde se encuentran cada una de las palabras del
+    diccionario, cada una en una línea.
+•   salida.txt: fichero donde se escribirán las particiones encontradas.
+•   Un argumento que, en caso de tomar el valor 1, modifica la cadena de entrada
+    de forma que cada letra tenga una probabilidad de ser cambiada por otra
+    cualquiera de 1 / (lf * 10), donde lf es la longitud de la frase.
+
+De esta forma, se incluyen dos ficheros dict100.txt y dict1000.txt con
+diccionarios de 100 y 1000 palabras, respectivamente. Estos se utilizan para
+realizar las pruebas, que se han automatizado mediante el script ejecutar.sh.
+
+No se garantiza el correcto funcionamiento del programa para diccionarios de
+10000 palabras o más y frases con 1000 palabras o más, ya que la cantidad de
+combinaciones posibles es demasiado grande y la ejecución tiene un coste
+temporal elevado.
+
+Además, cabe destacar que para que puedan existir varias secuencias de palabras
+para una frase, en el diccionario deberán existir palabras que compartan el
+prefijo. En caso contrario, solo existirá una única combinación posible.
